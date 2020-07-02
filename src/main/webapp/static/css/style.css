@@ -1,0 +1,222 @@
+@import
+	url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap')
+	;
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: red;
+}
+
+.big-title {
+	font-size: 25px;
+}
+
+.graphic {
+	transition: transform .2s;
+}
+
+.graphic:hover {
+	transform: scale(1.1);
+}
+
+.big-title {
+	font-size: 35px;
+	font-weight: lighter;
+}
+
+.vl {
+	border-left: 1px solid #6C757D;
+	height: 400px;
+	display: flex;
+	align-items: center;
+}
+
+.vl:before {
+	content: " ";
+	position: absolute;
+	z-index: -1;
+	top: -20px;
+	left: 0px;
+	right: 0px;
+	bottom: -20px;
+	border-left: 1px dashed #6C757D;
+}
+
+#toggleButton {
+	margin-left: -15px;
+	background: white;
+}
+
+.scrollable {
+	height: 500px;
+	overflow-y: auto;
+}
+
+.scrollable-2 {
+	height: 450px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#detailedGraphic {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+.zoom-buttons {
+	position: absolute;
+	z-index: 100;
+}
+
+.zoomer {
+	height: 500px;
+	overflow: auto;
+}
+
+.comparation-selected-1 {
+	border: 1px solid #FFC300;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+.comparation-selected-1::before {
+	content: "1";
+	position: absolute;
+	top: 5px;
+	left: -5px;
+	z-index: 1000;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	background-color: #FFC300;
+}
+
+.comparation-selected-2 {
+	border: 1px solid #C70039;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+.comparation-selected-2::before {
+	content: "2";
+	position: absolute;
+	top: 5px;
+	left: -5px;
+	z-index: 1000;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #C70039;
+}
+
+.compare-vl-1{
+  width: 1px;
+  height: 150px;
+  background-color: rgba(0,0,0,.1);
+}
+
+.compare-vl-2{
+  width: 1px;
+  height: 300px;
+  background-color: rgba(0,0,0,.1);
+}
+
+.progress{
+  height: 5px;
+  border-radius: 0;
+}
+
+/* CMAP */
+#click-info{
+  border-left: 1px solid rgba(0,0,0,.1);
+  padding-left: 15px;
+}
+
+.linking-phrase{
+  color: #707070;
+  font-style: italic;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+.concept{
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.concept:hover{
+  color: #0056b3;
+}
+
+.fixed-div{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+}
+
+.feature-info{
+  position: relative;
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 0px 20px grey;
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.tree-zoom-div{
+  position: relative;
+  height: 280px;
+  width: 400px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 0px 20px grey;
+}
+
+.tree-close{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 101;
+}
+
+.tree-zoom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 280px;
+  width: 400px;
+  z-index: 100;
+}
+
+.tree-header{
+  margin-top: 15px;
+}
+
+.tree-header hr{
+  margin-top: 0;
+}
+
+.tree-header:hover{
+    background-color: lightgrey;
+}
+
+.card-top{
+  height: 200px;
+  margin-top: 10px;
+}
